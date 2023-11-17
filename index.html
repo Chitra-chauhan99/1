@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image in Div</title>
+    <style>
+        button{
+            background-color: red;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            padding: 4px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function show(v){
+            document.getElementById("main").innerHTML="<img src='images/"+v+".jpg' width=300 height=300 alt='No image'>";
+        }
+        for(i=1;i<=10;i++){
+           document.write("<button onclick='show("+i+")'>"+i+"</button> ");
+        }
+    </script>
+    <br><br>
+    <div id="main"></div>
+</body>
+</html>
